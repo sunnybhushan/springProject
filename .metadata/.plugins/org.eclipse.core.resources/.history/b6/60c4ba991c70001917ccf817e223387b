@@ -1,0 +1,23 @@
+//wajp to count no of occurrence of each word present in the given file.
+package Recursion.Stack;
+
+import java.io.FileInputStream;
+import java.util.HashMap;
+
+import com.sun.javafx.collections.MappingChange.Map;
+
+public class OccurrenceOfWordInFile
+{
+	public static void main(String[] args) throws Exception
+	{
+		Map<String,Integer> cm= new HashMap<String,Integer>();
+		FileInputStream fin= new FileInputStream("file location");
+		int i;
+		while((i=fin.read())!=-1)
+		{
+			String w="";
+			while(Character.isAlphabetic(i));
+			i=fin.read();
+		}
+	}
+}

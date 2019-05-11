@@ -1,0 +1,22 @@
+//wajp to reverse the singleLinked list
+package Recursion.Stack;
+
+public class RaghuSir
+{
+	void reverse()
+	{
+		Node point=head;
+		Node cur=null;
+		Node pre=null;
+		while(point!=null)
+		{
+			cur=point.next;
+			point.next =pre;
+			pre=point;
+			if(cur==null)
+				break;
+			head=cur;
+			point=cur;
+		}
+	}
+}

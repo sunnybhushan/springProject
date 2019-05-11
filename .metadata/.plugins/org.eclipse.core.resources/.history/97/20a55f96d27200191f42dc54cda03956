@@ -1,0 +1,14 @@
+package recurring;
+
+public class StringWordRev
+{
+	public static void main(String[] args) {
+		String str="sunny";
+		
+		StringBuilder st= new StringBuilder();
+		st.append(str);
+		st.reverse();
+		System.out.println(str);
+		
+	}
+}

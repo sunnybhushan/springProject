@@ -1,0 +1,111 @@
+
+package LinkedList;
+
+public class SingleLinkedList
+{
+	class Node
+	{
+		Object data;
+		Node next;
+		Node(Object data)
+		{
+			this.data=data;
+		}
+	}
+	
+	Node head;
+	int size;
+	public SingleLinkedList()
+	{
+		head=null;
+		size=0;
+	}
+	
+	public boolean add(Object obj)
+	{
+		Node n=new Node(obj);
+		size++;
+		if(head==null)
+		{
+			head=n;
+			return true;
+		}
+		Node t=head;
+		while(t.next!=null)
+		{
+			t=t.next;
+			t.next=n;
+		}
+		return true;
+	}
+		public boolean addFirst(Object obj)
+		{
+			Node n=new Node(obj);
+			n.next=head;
+			head=n;
+			return true;	
+		}
+		
+		public String toString()
+		{
+			Node t= head;
+			String st="[";
+			while(t!=null)
+			{
+				st=st+t.data;
+				t=t.next;
+				if(t.next!=null)
+					st=st+",";
+				t=t.next;	
+			}
+			return st+"]";
+		}
+	
+	public Object deleteFirst()
+	{
+		if(head==null)
+		{
+			System.out.println("list is empty");
+			return null;
+		}
+		Object obj= head.data;
+		return obj;
+	}
+	
+	public Object deleteLast()
+	{
+		if(head==null)
+		{
+			System.out.println("list is empty");
+			return null;
+		}
+		Node t=head;
+		Node t1=null;
+		while(t.next!=null)
+		{
+			t1=t;
+			t=t.next;
+		}
+		if(t1!=null)
+			t1.next=null;
+			
+		else
+			head=null;
+		
+		return t.data;
+		
+	}
+		
+		                              
+	
+}
+
+
+
+
+
+
+
+
+
+

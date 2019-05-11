@@ -1,0 +1,33 @@
+package com.jspiders.app.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.jspider.app.StudentDto;
+
+@Controller
+public class LoginAndRegistration
+{
+	
+	@RequestMapping(value="/SignUp")
+	String SignUp(@ModelAttribute StudentDto student)
+	{
+		System.out.println(student);
+		return "registration";
+	}
+	
+	@RequestMapping(value="/SignIn")
+	String SignIn()
+	{
+		System.out.println("Login");
+		return "signin";
+	}
+	
+	@RequestMapping(value="/student")
+	String Registration()
+	{
+		System.out.println("Login");
+		return "registration";
+	}
+}

@@ -1,0 +1,11 @@
+package LinkedList;
+
+public class MainRunner 
+{
+	public static void main(String[] args) {
+		SingleLinkedList sl= new SingleLinkedList();
+		sl.add("apple");
+		sl.add("orange");
+		System.out.println(sl);
+	}
+}

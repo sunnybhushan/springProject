@@ -1,0 +1,25 @@
+package recurring;
+
+import java.util.Scanner;
+
+public class Power 
+{
+	 public static void main(String[] args) 
+	 {
+		 System.out.println("Enter the number");
+		Scanner sc= new Scanner(System.in);
+		int no=sc.nextInt();
+		System.out.println("Enter the power");
+		int pwd=sc.nextInt();
+		sc.close();
+		int  a=isPower(no,pwd);
+	}
+
+	public static int isPower(int no, int pw)
+	{
+		if(no<0)
+			return 0;
+		
+		return no*isPower(no, pw-1);
+	}
+}

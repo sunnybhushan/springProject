@@ -1,0 +1,22 @@
+// select * into  empd(new table) from emp(old table) where 1=2;
+
+
+package DoubleLinkedList;
+
+public class MainRunner 
+{
+		public static void main(String[] args) {
+			DoublyLinkedList dl= new DoublyLinkedList();
+			dl.add("A");
+			dl.add("B");
+			dl.add("C");
+			System.out.println(dl);
+			dl.addFirst("Z");
+			System.out.println(dl);
+			
+			System.out.println(dl.deleteFirst());
+			System.out.println(dl.deleteLast());
+			dl.add("sql", 3);
+		}
+}
+

@@ -1,0 +1,26 @@
+package FileHandling;
+
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+
+public class Outputa 
+{
+	public static void main(String[] args)
+	{
+		FileOutputStream fout= null;
+		String st="Welcome to Jspider";
+		
+		try {
+			fout= new FileOutputStream("D:/file.txt");
+			byte b[]=st.getBytes();
+			fout.write(b);
+			
+		} catch (IOException e)
+		{
+			
+			e.printStackTrace();
+		}
+				
+	}
+}

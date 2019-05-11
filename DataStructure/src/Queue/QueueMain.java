@@ -1,0 +1,19 @@
+package Queue;
+
+public class QueueMain
+{
+	public static void main(String[] args) {
+		MyQueue mq=new MyQueue(5);
+		
+		mq.enQue("A");
+		mq.enQue("B");
+		mq.enQue("C");
+		System.out.println(mq);
+		System.out.println(mq.size());
+		System.out.println(mq.deQue());
+		System.out.println(mq.deQue());
+		System.out.println(mq);
+		System.out.println(mq.deQue());
+		System.out.println(mq.deQue());	
+	}
+}

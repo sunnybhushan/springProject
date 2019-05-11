@@ -1,0 +1,30 @@
+package recurring;
+
+import java.util.Scanner;
+
+public class gcd 
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("Enter the first no");
+		Scanner sc=new Scanner(System.in);
+		int no=sc.nextInt();
+		System.out.println("Enter the second no");
+		int no2=sc.nextInt();
+		int a=isGcd(no,no2);
+		System.out.println(a);
+	}
+	
+	public static int isGcd(int m, int n)
+	{
+		if(n>m)
+			return isGcd(n,m);
+		
+		if(m%n==0)
+			return n;
+		
+		return isGcd(n, m%n);
+		
+	}
+	
+}

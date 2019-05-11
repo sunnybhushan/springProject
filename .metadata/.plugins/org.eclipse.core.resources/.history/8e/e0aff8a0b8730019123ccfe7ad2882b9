@@ -1,0 +1,21 @@
+package com.jspiders.app.controller;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+
+public class LoginAndRegistration
+{
+	
+	@RequestMapping(value="/SignUp")
+	String sun()
+	{
+		System.out.println("student");
+		return "registration";
+	}
+	
+	@RequestMapping(value="/SignIn")
+	String delete()
+	{
+		System.out.println("Login");
+		return "signin";
+	}
+}

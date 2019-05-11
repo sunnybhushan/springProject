@@ -1,0 +1,47 @@
+package recurring;
+
+import java.util.Scanner;
+
+public class gcd 
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("Enter the first no");
+		Scanner sc=new Scanner(System.in);
+		int no=sc.nextInt();
+		//System.out.println("Enter the second no");
+//		int no2=sc.nextInt();
+//		int a=isGcd(no,no2);
+//		System.out.println(a);
+//		System.out.println("enter the no for reverse");
+		int c=reverse(no);
+		System.out.println(c);
+	}
+	
+	public static int isGcd(int m, int n)
+	{
+		if(n>m)
+			return isGcd(n,m);
+		
+		if(m%n==0)
+			return n;
+		
+		return isGcd(n, m%n);
+		
+	}
+	public static int reverse(int no)
+	{
+		int sum=0;
+		while(no<0)
+			{
+		int rem=no%10;
+		sum=sum*10+rem;
+		 no=no/10;
+			}
+		return sum;
+		
+	}
+	
+	
+	
+}

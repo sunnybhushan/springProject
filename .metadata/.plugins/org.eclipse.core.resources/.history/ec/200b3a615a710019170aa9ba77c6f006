@@ -1,0 +1,13 @@
+package DoubleLinkedList;
+
+public class MainRunner 
+{
+		public static void main(String[] args) {
+			DoublyLinkedList dl= new DoublyLinkedList();
+			dl.add("A");
+			dl.add("B");
+			dl.add("C");
+			System.out.println(dl);
+			
+		}
+}

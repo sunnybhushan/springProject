@@ -1,0 +1,44 @@
+package com.jspiders.app.controller;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+
+@Controller
+public class StudentController 
+{
+	
+	@RequestMapping(value="/")
+	String sun()
+	{
+		System.out.println("student");
+		return "dashboard";
+	}
+	
+	@RequestMapping(value="/Login")
+	String delete()
+	{
+		System.out.println("Login");
+		return "signin";
+	}
+	
+	@RequestMapping(value="/registration")
+	String adelete()
+	{
+		System.out.println("Login");
+		return "registration";
+	}
+	
+	@RequestMapping(value="/student",method=RequestMethod.POST)
+	String dummy(StudentDao student,ModelMap m)
+	{
+		System.out.println(student);
+		
+		
+		m.addAttribute("reg", "SignUp successfully");
+		m.addAttribute("rega", student);
+		return "registration";
+	}
+	
+	
+}
