@@ -16,6 +16,7 @@ public class gcd
 //		System.out.println("enter the no for reverse");
 		int c=reverse(no);
 		System.out.println(c);
+		
 	}
 	
 	public static int isGcd(int m, int n)

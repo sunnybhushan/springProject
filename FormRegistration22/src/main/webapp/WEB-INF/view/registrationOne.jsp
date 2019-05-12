@@ -8,7 +8,7 @@
 </head>
 <body>
 	<h2>
-	lastName: ${std.firstName}<br>
+	fastName: ${std.firstName}<br>
 	lstName: ${std.lstName }<br>
 	mobNo: ${std.mobNo}
 	<br>

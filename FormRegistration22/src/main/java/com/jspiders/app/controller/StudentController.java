@@ -14,7 +14,7 @@ public class StudentController
 	String Registration(@ModelAttribute StudentDto student, Model m)
 	{
 		m.addAttribute("std",student);
-		System.out.println(student);
+		//System.out.println(student);
 		return "registrationOne";
 	}
 

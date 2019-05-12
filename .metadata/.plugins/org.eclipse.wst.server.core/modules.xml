@@ -2,5 +2,6 @@
 <modules>
   <module moduleId="org.eclipse.jst.j2ee.server:StudentManagement" serverId="Tomcat v8.0 Server at localhost"/>
   <module moduleId="org.eclipse.jst.j2ee.server:FormRegistration21" serverId="Tomcat v8.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.j2ee.server:FormRegistration23" serverId="Tomcat v8.0 Server at localhost"/>
   <module moduleId="org.eclipse.jst.j2ee.server:FormRegistration22" serverId="Tomcat v8.0 Server at localhost"/>
 </modules>

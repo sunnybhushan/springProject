@@ -20,7 +20,7 @@ public class LoginAndRegistration
 	@RequestMapping(value="/SignUp")
 	String SignUp()
 	{
-		System.out.println("student");
+		//System.out.println("student");
 		return "registration";
 	}
 	
